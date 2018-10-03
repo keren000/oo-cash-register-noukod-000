@@ -23,7 +23,7 @@ class CashRegister
     # return "After the discount, the total comes to $#{self.total}."
     # end
     if discount!= 0
-      self_total =m(total *((100.0 - discount.to_f)/100)).to_i
+      self_total =(total *((100.0 - discount.to_f)/100)).to_i
       return "After the discount, the total comes to $#{self.total}."
     else
        return "There is no discount to apply"
